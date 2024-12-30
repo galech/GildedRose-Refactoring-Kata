@@ -84,10 +84,10 @@ class NewItemTest(unittest.TestCase):
 
     def test_backstage_passes(self):
         # check intervals
-        self.assertEqual(1, self.gen_backstage_passes(11).compute_quality_delta)  
-        self.assertEqual(2, self.gen_backstage_passes(10).compute_quality_delta)    
-        self.assertEqual(2, self.gen_backstage_passes(6).compute_quality_delta)  
-        self.assertEqual(3, self.gen_backstage_passes(5).compute_quality_delta)
+        self.assertEqual(1, self.gen_backstage_passes(10).compute_quality_delta)  
+        self.assertEqual(2, self.gen_backstage_passes(9).compute_quality_delta)    
+        self.assertEqual(2, self.gen_backstage_passes(5).compute_quality_delta)  
+        self.assertEqual(3, self.gen_backstage_passes(4).compute_quality_delta)
         self.assertEqual(3, self.gen_backstage_passes(0).compute_quality_delta) 
         self.assertEqual(-MAX_QUALITY, self.gen_backstage_passes(-1).compute_quality_delta)  
 

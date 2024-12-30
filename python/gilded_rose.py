@@ -25,9 +25,9 @@ class NewItem:
         if base_item.name.startswith("Backstage passes"):
             self.custom_intervals = [
                 {"lte": -1, "change": -MAX_QUALITY},  # need quality to be fixed
-                {"interval": [0, 5], "change": 3},
-                {"interval": [6, 10], "change": 2},
-                {"gte": 11, "change": 1}
+                {"interval": [0, 4], "change": 3},
+                {"interval": [5, 9], "change": 2},
+                {"gte": 10, "change": 1}
             ]
 
         self.fix_quality()
